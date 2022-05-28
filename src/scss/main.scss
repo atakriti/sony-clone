@@ -1,6 +1,6 @@
 @import "./var";
 @import "./header";
-@import "./main-con";
+@import "./baner";
 @import "./neuigkeiten";
 @import "./whatsHot";
 @import "./nachrichten";
@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     user-select: none;
-    a,i,li{
+    a,i,li,button{
         cursor: pointer;
     }
    

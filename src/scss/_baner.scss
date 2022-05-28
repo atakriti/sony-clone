@@ -24,6 +24,12 @@ main{
                 width: 60%;
                 padding: 2% 0;
                 color: white;
+                transition: 0.7s;
+                &:hover{
+                transition: 0.3s;
+                    background-color: rgb(3, 86, 182);
+                    box-shadow: 3px 3px 10px black;
+                }
             }
         }
     }
