@@ -1,34 +1,46 @@
 main {
   footer {
-    // background: rgb(29, 29, 29);
+    background: rgb(29, 29, 29);
     .footer-con {
       width: 60%;
       margin: 0 auto;
+      padding: 4% 0;
       .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         span {
-          width: 24%;
-          border: 1px red solid;
+          width: 22%;
           p {
               color: gray;
               font-size: $fs-sm;
           }
           form{
-              border: 1px red solid;
               display: flex;
+              margin: 2% 0;
+              border: 0.1vw white solid;
+              padding: 1%;
               input{
                   width: 70%;
                   font-size: $fs-sm;
+                  position: relative;
+                  background-color: transparent;
+                  border: none;
+                  outline: none;
+                  
                  &::placeholder{
                      background-image: url(../images/location.png);
                      background-repeat: no-repeat;
                      background-position: left;
                      background-size: 1vw;
-                     padding-left: 13%;
+                     padding-left: 13%;                
                  }
-                
+                &:focus{
+                   &::placeholder{
+                       background-image: none;
+                       padding: 3%;
+                   }
+                }
               }
               button{
                   width: 30%;
@@ -45,8 +57,24 @@ main {
               color: white;
           }
         }
+        // =========== ul ========
         ul {
           width: 24%;
+          line-height: 1.6;
+          p{
+              color: white;
+              font-size: $fs-sm;
+              margin-bottom: 2%;
+          }
+          li{
+              list-style: none;
+              a{
+                  text-decoration: none;
+                  color: white;
+                  font-size: $fs-sm;
+
+          }
+        }
         }
       }
     }
