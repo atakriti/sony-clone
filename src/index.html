@@ -50,7 +50,21 @@
   
     <!-- ============================== mobile menu ================================= -->
     <div class="menu-mobile">
-
+      <div class="menu-con">
+       <div class="top">
+          <form >
+            <input placeholder="Search" type="search" name="search" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+          <i onclick="menuClose()" class="fa-solid fa-arrow-right-from-bracket"></i>
+       </div>
+        <ul>
+          <li onclick="one()"><a href="#one">Aktuelle Neuigkeiten</a></li>
+          <li onclick="two()"><a href="#two">What's Hot</a></li>
+          <li onclick="three()"><a href="#three">Aktuelle Nachrichten</a></li>
+          <li onclick="four()"><a href="#four">Info</a></li>
+        </ul>
+      </div>
     </div>
     
            <!-- ==================== HEADER ================== -->
@@ -108,7 +122,7 @@
              </ul>   
              <button>Sony durchsehen<i class="fa-solid fa-magnifying-glass"></i> </button>
              <button onclick="siteOpen()">Sony Sites <i class="fa-solid fa-caret-up"></i></button>
-             <i class="fa-solid fa-bars-staggered"></i>
+             <i onclick="menuOpen()" class="fa-solid fa-bars-staggered"></i>
             </div>
           </nav>
         </header>
@@ -124,7 +138,7 @@
                 </div>
             </div>
             <!-- ================ neuigkeiten ================ -->
-            <div class="neuigkeiten">
+            <div id="one" class="neuigkeiten">
               <div class="neuigkeiten-con">
                 <h1>AKTUELLE NEUIGKEITEN</h1>
                 <div class="slides">
@@ -176,7 +190,7 @@
               </div>
             </div>
             <!-- ==================== Whats hot =================== -->
-            <div class="whatHot">
+            <div id="two" class="whatHot">
               <h1>WHAT'S HOT</h1>
               <div class="what-con">
                 <!-- ========== left ======================================= -->
@@ -286,7 +300,7 @@
               </div>
             </div>
             <!-- =================== Nachrichten =============== -->
-            <div class="nachrichten">
+            <div id="three" class="nachrichten">
               <div class="nachrichten-con">
                 <!-- ============== top ========= -->
                 <div class="top">
@@ -323,7 +337,7 @@
                 </div>
               </div>
             </div>
-            <footer>
+            <footer id="four">
               <div class="footer-con">
                 <div class="top">
                   <!-- =================== -->
