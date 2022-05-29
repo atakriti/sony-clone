@@ -1,0 +1,17 @@
+@keyframes siteOpenA {
+    from{
+        height: 0vw;
+    }
+    to{
+        height: 30vw;
+    }
+}
+
+@keyframes siteCloseA {
+    from{
+        height: 30vw;
+    }
+    to{
+        height: 0vw;
+    }
+}

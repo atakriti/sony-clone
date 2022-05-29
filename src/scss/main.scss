@@ -1,10 +1,14 @@
 @import "./var";
+@import "./sonySites";
 @import "./header";
 @import "./baner";
 @import "./neuigkeiten";
 @import "./whatsHot";
 @import "./nachrichten";
 @import "./footer";
+@import "./menuMobile";
+@import "./animation";
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap');
 *{
     margin: 0;
@@ -15,7 +19,7 @@
     a,i,li,button{
         cursor: pointer;
     }
-   
+//    zoom:inherit ;
 }
 body{
     &::-webkit-scrollbar{

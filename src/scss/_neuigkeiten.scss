@@ -1,72 +1,76 @@
-main{
-    .neuigkeiten{
-        width: 80%;
-        margin-left: auto;
-
-        .neuigkeiten-con{
-          
-            h1{
-                margin: 3% 0;
-                font-size: $fs-h1;
-            }
-            .slides{
-                overflow-X: scroll;
-                overflow-Y: hidden;
-                padding-bottom: 2%;
-                &::-webkit-scrollbar{
-                    background-color: transparent;
-                    height: 1vw;
-                }
-                &::-webkit-scrollbar-thumb{
-                    background: linear-gradient(to right,black,rgb(216, 216, 216));
-                    border-radius: 50px;
-                }
-              .slides-con{
-                display: flex;
-               width: 200%;
-                span{
-                    margin-right: 3%;
-                    position: relative;
-                    // width: 100%;
-                    a{
+.main-with-menuMobile{
+    .main-website{
+        main{
+            .neuigkeiten{
+                width: 80%;
+                margin-left: auto;
+        
+                .neuigkeiten-con{
+                  
+                    h1{
+                        margin: 3% 0;
+                        font-size: $fs-h1;
+                    }
+                    .slides{
+                        overflow-X: scroll;
+                        overflow-Y: hidden;
+                        padding-bottom: 2%;
+                        &::-webkit-scrollbar{
+                            background-color: transparent;
+                            height: 1vw;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background: linear-gradient(to right,black,rgb(216, 216, 216));
+                            border-radius: 50px;
+                        }
+                      .slides-con{
                         display: flex;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            transition: 0.7s;
-                            &:hover{
-                                transition: 0.7s;
-                                filter: brightness(1.2);
+                       width: 200%;
+                        span{
+                            margin-right: 3%;
+                            position: relative;
+                            // width: 100%;
+                            a{
+                                display: flex;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    transition: 0.7s;
+                                    &:hover{
+                                        transition: 0.7s;
+                                        filter: brightness(1.2);
+                                    }
+                                }
+                            }
+                            .text{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                padding: 3%;
+                                p{
+                                    font-size: $fs-p;
+                                    i{
+                                        font-size: $fs-1;
+                                        margin-left: 1%;
+                                    }
+                                }
+                            }
+                            &:nth-child(1),&:nth-child(3),&:nth-child(4),&:nth-child(5){
+                                .text{
+                                    small{
+                                        color: white;
+                                        font-size: $fs-sm;
+                                    }
+                                    p{
+                                        color: white;
+                                    }
+                                }
                             }
                         }
-                    }
-                    .text{
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        padding: 3%;
-                        p{
-                            font-size: $fs-p;
-                            i{
-                                font-size: $fs-1;
-                                margin-left: 1%;
-                            }
-                        }
-                    }
-                    &:nth-child(1),&:nth-child(3),&:nth-child(4),&:nth-child(5){
-                        .text{
-                            small{
-                                color: white;
-                                font-size: $fs-sm;
-                            }
-                            p{
-                                color: white;
-                            }
-                        }
+                      }
                     }
                 }
-              }
             }
         }
     }
