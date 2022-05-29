@@ -26,7 +26,7 @@ let siteOpen = () => {
 // ==================================== MENU ================
 let menuMobile = document.querySelector(".menu-mobile")
 
-menuMobile.style.display = "block"
+menuMobile.style.display = "none"
 let menuClose = () => {
     if (menuMobile.style.display === "block") {
         setTimeout(() => (menuMobile.style.display = "none"), 1000)
