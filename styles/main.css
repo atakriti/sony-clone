@@ -1,0 +1,934 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap");
+.sites {
+  background: rgb(238, 238, 238);
+  overflow: hidden;
+}
+.sites .sites-con {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+.sites .sites-con .close-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sites .sites-con .close-btn button {
+  font-size: 0.8vw;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  padding: 1%;
+  outline: none;
+  border: none;
+}
+.sites .sites-con h1 {
+  font-size: 1.4vw;
+  margin: 2% 0;
+}
+.sites .sites-con .sites-slides {
+  display: flex;
+  justify-content: space-between;
+}
+.sites .sites-con .sites-slides span {
+  width: 32%;
+}
+.sites .sites-con .sites-slides span a {
+  display: flex;
+}
+.sites .sites-con .sites-slides span a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+.sites .sites-con .sites-slides span a img:hover {
+  filter: brightness(1.2);
+}
+.sites .sites-con .sites-slides span h3 {
+  font-size: 0.8vw;
+  margin-top: 2%;
+}
+.sites .sites-con .sites-slides span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  .sites {
+    overflow: scroll;
+  }
+  .sites .sites-con {
+    width: 100%;
+  }
+  .sites .sites-con .close-btn button {
+    font-size: 3vw;
+    width: 20%;
+    padding: 2%;
+  }
+  .sites .sites-con h1 {
+    font-size: 4vw;
+  }
+  .sites .sites-con .sites-slides {
+    flex-wrap: wrap;
+  }
+  .sites .sites-con .sites-slides span {
+    width: 50%;
+  }
+  .sites .sites-con .sites-slides span h3 {
+    font-size: 3vw;
+    padding: 2%;
+  }
+}
+header {
+  background-color: black;
+  padding: 0.2% 0;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+header nav {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .left {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .left .logo {
+  width: 20%;
+  display: flex;
+}
+header nav .left .logo svg {
+  width: 100%;
+  height: 100%;
+}
+header nav .left ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+header nav .left ul li {
+  list-style: none;
+  padding: 6% 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+header nav .left ul li:nth-child(n+2):nth-child(-n+4) {
+  width: 80%;
+}
+header nav .left ul li:first-child {
+  padding: 6% 2%;
+}
+header nav .left ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8vw;
+}
+header nav .left ul li i {
+  color: white;
+  font-size: 0.8vw;
+}
+header nav .left ul li:hover::after {
+  content: "";
+  width: 90%;
+  height: 3px;
+  background-color: skyblue;
+  position: absolute;
+  top: 100%;
+}
+header nav .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38%;
+}
+header nav .right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  margin-right: 3%;
+}
+header nav .right ul li {
+  list-style: none;
+  display: flex;
+  white-space: nowrap;
+}
+header nav .right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8vw;
+}
+header nav .right ul li i {
+  font-size: 0.8vw;
+}
+header nav .right ul li i:hover {
+  box-shadow: 0px 0px 20px white;
+}
+header nav .right button {
+  background-color: gray;
+  font-size: 0.65vw;
+  color: white;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 32%;
+  padding: 2% 2%;
+  transition: 0.7s;
+  white-space: nowrap;
+}
+header nav .right button:nth-child(3) {
+  width: 20%;
+  background-color: rgb(0, 132, 255);
+}
+header nav .right button:hover {
+  transition: 0.7s;
+  background-color: darkgray;
+}
+header nav .right .fa-bars-staggered {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 3%;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .left .logo {
+    width: 40%;
+  }
+  header nav .left ul {
+    display: none;
+  }
+  header nav .right {
+    width: 65%;
+  }
+  header nav .right ul {
+    display: none;
+  }
+  header nav .right button {
+    font-size: 2.5vw;
+    width: 50%;
+  }
+  header nav .right button:nth-child(3) {
+    width: 30%;
+  }
+  header nav .right .fa-bars-staggered {
+    display: block;
+    color: white;
+    font-size: 6vw;
+  }
+}
+.menu-mobile {
+  display: none;
+}
+
+main .baner {
+  background-image: url(../images/logo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 13%;
+  width: 100%;
+}
+main .baner .text {
+  width: 40%;
+  margin-left: auto;
+}
+main .baner .text p {
+  font-size: 1vw;
+}
+main .baner .text h1 {
+  font-size: 3vw;
+  margin: 2% 0;
+}
+main .baner .text button {
+  border: none;
+  background-color: rgb(0, 119, 255);
+  outline: none;
+  font-size: 1vw;
+  width: 60%;
+  padding: 2% 0;
+  color: white;
+  transition: 0.7s;
+}
+main .baner .text button:hover {
+  transition: 0.3s;
+  background-color: rgb(3, 86, 182);
+  box-shadow: 3px 3px 10px black;
+}
+
+@media only screen and (max-width: 800px) {
+  main .baner {
+    padding: 35% 0 35% 35%;
+  }
+  main .baner .text {
+    width: 80%;
+  }
+  main .baner .text p {
+    font-size: 3vw;
+  }
+  main .baner .text h1 {
+    font-size: 4vw;
+  }
+  main .baner .text button {
+    font-size: 3vw;
+    width: 80%;
+  }
+}
+main .neuigkeiten {
+  width: 80%;
+  margin-left: auto;
+}
+main .neuigkeiten .neuigkeiten-con h1 {
+  margin: 3% 0;
+  font-size: 1.7vw;
+}
+main .neuigkeiten .neuigkeiten-con .slides {
+  overflow-X: scroll;
+  overflow-Y: hidden;
+  padding-bottom: 2%;
+}
+main .neuigkeiten .neuigkeiten-con .slides::-webkit-scrollbar {
+  background-color: transparent;
+  height: 1vw;
+}
+main .neuigkeiten .neuigkeiten-con .slides::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, black, rgb(216, 216, 216));
+  border-radius: 50px;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con {
+  display: flex;
+  width: 200%;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span {
+  margin-right: 3%;
+  position: relative;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span a {
+  display: flex;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span a img:hover {
+  transition: 0.7s;
+  filter: brightness(1.2);
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3%;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span .text p {
+  font-size: 1.4vw;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span .text p i {
+  font-size: 1vw;
+  margin-left: 1%;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(1) .text small, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(3) .text small, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(4) .text small, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(5) .text small {
+  color: white;
+  font-size: 0.8vw;
+}
+main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(1) .text p, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(3) .text p, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(4) .text p, main .neuigkeiten .neuigkeiten-con .slides .slides-con span:nth-child(5) .text p {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  main .neuigkeiten {
+    padding-top: 13%;
+    width: 100%;
+    margin: 0;
+  }
+  main .neuigkeiten .neuigkeiten-con h1 {
+    font-size: 4vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .slides .slides-con {
+    width: 300%;
+  }
+  main .neuigkeiten .neuigkeiten-con .slides .slides-con span .text p {
+    font-size: 3vw;
+  }
+  main .neuigkeiten .neuigkeiten-con .slides .slides-con span .text p i {
+    font-size: 3vw;
+  }
+}
+main .whatHot {
+  width: 60%;
+  margin: 0 auto;
+}
+main .whatHot h1 {
+  font-size: 1.7vw;
+  margin: 2% 0;
+}
+main .whatHot .what-con {
+  display: flex;
+  justify-content: space-between;
+}
+main .whatHot .what-con .left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 58%;
+}
+main .whatHot .what-con .left span {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .whatHot .what-con .left span .img {
+  position: relative;
+}
+main .whatHot .what-con .left span .img a {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 10%;
+}
+main .whatHot .what-con .left span .img a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+main .whatHot .what-con .left span .img a img:hover {
+  transition: 0.7s;
+  filter: brightness(1.2);
+}
+main .whatHot .what-con .left span .img .fa-heart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4%;
+  color: gray;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .left span .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2%;
+}
+main .whatHot .what-con .left span .text p {
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .left span .text small {
+  font-size: 0.7vw;
+  color: gray;
+}
+main .whatHot .what-con .left span .text b {
+  font-size: 0.8vw;
+  color: gray;
+}
+main .whatHot .what-con .left span .stars {
+  color: orange;
+  display: flex;
+  align-items: center;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .left span .stars h5 {
+  color: gray;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .left span:first-child {
+  background-color: rgb(122, 58, 151);
+  width: 60%;
+  padding: 5%;
+}
+main .whatHot .what-con .left span:first-child p {
+  color: white;
+  font-size: 1.4vw;
+}
+main .whatHot .what-con .left span:nth-child(2) {
+  width: 38%;
+}
+main .whatHot .what-con .left span:nth-child(n+3):nth-child(-n+5) {
+  margin-top: 2%;
+}
+main .whatHot .what-con .right {
+  width: 40%;
+}
+main .whatHot .what-con .right .img {
+  position: relative;
+  height: 84%;
+}
+main .whatHot .what-con .right .img a {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+}
+main .whatHot .what-con .right .img a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+main .whatHot .what-con .right .img a img:hover {
+  transition: 0.7s;
+  filter: brightness(1.2);
+}
+main .whatHot .what-con .right .img .fa-heart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4%;
+  color: gray;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .right .img strong {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+  padding: 2%;
+  color: white;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .right .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16%;
+  padding: 2%;
+}
+main .whatHot .what-con .right .text p {
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .right .text small {
+  font-size: 0.7vw;
+  color: gray;
+}
+main .whatHot .what-con .right .text b {
+  font-size: 0.8vw;
+  color: gray;
+}
+main .whatHot .what-con .right .stars {
+  color: orange;
+  display: flex;
+  align-items: center;
+  font-size: 0.8vw;
+}
+main .whatHot .what-con .right .stars h5 {
+  color: gray;
+  font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .whatHot {
+    padding-top: 13%;
+    width: 100%;
+    padding-bottom: 15%;
+  }
+  main .whatHot h1 {
+    font-size: 4vw;
+  }
+  main .whatHot .what-con {
+    flex-wrap: wrap;
+  }
+  main .whatHot .what-con .left {
+    width: 100%;
+  }
+  main .whatHot .what-con .left span .img .fa-heart {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span .text {
+    padding: 3%;
+  }
+  main .whatHot .what-con .left span .text p {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span .text small {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span .text b {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span .stars {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span .stars h5 {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .left span:first-child p {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right {
+    width: 50%;
+    margin-top: 2%;
+  }
+  main .whatHot .what-con .right .img .fa-heart {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .img strong {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .text {
+    padding: 3%;
+  }
+  main .whatHot .what-con .right .text p {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .text small {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .text b {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .stars {
+    font-size: 3vw;
+  }
+  main .whatHot .what-con .right .stars h5 {
+    font-size: 3vw;
+  }
+}
+main .nachrichten {
+  background-color: rgb(238, 238, 238);
+  padding: 1%;
+}
+main .nachrichten .nachrichten-con {
+  width: 60%;
+  margin: 0 auto;
+}
+main .nachrichten .nachrichten-con .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1vw solid rgb(206, 206, 206);
+  margin-bottom: 2%;
+}
+main .nachrichten .nachrichten-con .top h1 {
+  font-size: 1.7vw;
+  margin: 2% 0;
+}
+main .nachrichten .nachrichten-con .top .nachrichten-link {
+  color: blue;
+  font-size: 1vw;
+}
+main .nachrichten .nachrichten-con .carts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .nachrichten .nachrichten-con .carts span {
+  width: 30%;
+  position: relative;
+}
+main .nachrichten .nachrichten-con .carts span a {
+  display: flex;
+}
+main .nachrichten .nachrichten-con .carts span a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+main .nachrichten .nachrichten-con .carts span a img:hover {
+  transition: 0.7s;
+  filter: brightness(1.2);
+}
+main .nachrichten .nachrichten-con .carts span .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2%;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+main .nachrichten .nachrichten-con .carts span .text p {
+  color: white;
+  font-size: 1vw;
+}
+main .nachrichten .nachrichten-con .carts span .text small {
+  font-size: 0.8vw;
+  color: white;
+}
+main .nachrichten .nachrichten-con .carts span .text h3 {
+  color: white;
+  font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main .nachrichten {
+    padding-top: 13%;
+  }
+  main .nachrichten .nachrichten-con {
+    width: 100%;
+    margin: 0;
+  }
+  main .nachrichten .nachrichten-con .top h1 {
+    font-size: 4vw;
+  }
+  main .nachrichten .nachrichten-con .top .nachrichten-link {
+    font-size: 3vw;
+  }
+  main .nachrichten .nachrichten-con .carts {
+    flex-wrap: wrap;
+  }
+  main .nachrichten .nachrichten-con .carts span {
+    width: 80%;
+    margin: 2% auto;
+  }
+  main .nachrichten .nachrichten-con .carts span .text p {
+    font-size: 3vw;
+  }
+  main .nachrichten .nachrichten-con .carts span .text small {
+    font-size: 3vw;
+  }
+  main .nachrichten .nachrichten-con .carts span .text h3 {
+    font-size: 3vw;
+  }
+}
+main footer {
+  background: rgb(29, 29, 29);
+}
+main footer .footer-con {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4% 0;
+}
+main footer .footer-con .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main footer .footer-con .top span {
+  width: 22%;
+}
+main footer .footer-con .top span p {
+  color: gray;
+  font-size: 0.8vw;
+}
+main footer .footer-con .top span form {
+  display: flex;
+  margin: 2% 0;
+  border: 0.1vw white solid;
+  padding: 1%;
+}
+main footer .footer-con .top span form input {
+  width: 70%;
+  font-size: 0.8vw;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+main footer .footer-con .top span form input::placeholder {
+  background-image: url(../images/location.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1vw;
+  padding-left: 13%;
+}
+main footer .footer-con .top span form input:focus::placeholder {
+  background-image: none;
+  padding: 3%;
+}
+main footer .footer-con .top span form button {
+  width: 30%;
+  font-size: 0.8vw;
+  padding: 2%;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 102, 255);
+  color: white;
+}
+main footer .footer-con .top span small {
+  font-size: 0.8vw;
+  color: white;
+}
+main footer .footer-con .top ul {
+  width: 24%;
+  line-height: 1.6;
+}
+main footer .footer-con .top ul p {
+  color: rgb(85, 85, 85);
+  font-size: 0.8vw;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+main footer .footer-con .top ul li {
+  list-style: none;
+}
+main footer .footer-con .top ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main footer {
+    padding: 2%;
+  }
+  main footer .footer-con {
+    width: 100%;
+  }
+  main footer .footer-con .top {
+    flex-wrap: wrap;
+  }
+  main footer .footer-con .top span {
+    width: 100%;
+  }
+  main footer .footer-con .top span p {
+    font-size: 3vw;
+  }
+  main footer .footer-con .top span form input {
+    font-size: 3vw;
+  }
+  main footer .footer-con .top span form input::placeholder {
+    background-size: 4vw;
+  }
+  main footer .footer-con .top span form button {
+    font-size: 3vw;
+  }
+  main footer .footer-con .top span small {
+    font-size: 3vw;
+  }
+  main footer .footer-con .top ul {
+    width: 50%;
+    margin: 3% 0;
+  }
+  main footer .footer-con .top ul p {
+    font-size: 3vw;
+  }
+  main footer .footer-con .top ul li a {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .menu-mobile {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    padding: 2%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+  }
+  .menu-mobile .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-mobile .top form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.226);
+  }
+  .menu-mobile .top form input {
+    width: 90%;
+    font-size: 4vw;
+    padding: 1%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .menu-mobile .top form input::placeholder {
+    color: white;
+  }
+  .menu-mobile .top form i {
+    font-size: 4vw;
+    padding: 2%;
+    color: white;
+  }
+  .menu-mobile .top .fa-arrow-right-from-bracket {
+    font-size: 5vw;
+    color: white;
+    padding: 2%;
+    width: 20%;
+    text-align: right;
+  }
+  .menu-mobile ul {
+    line-height: 2;
+  }
+  .menu-mobile ul li {
+    list-style: none;
+  }
+  .menu-mobile ul li a {
+    color: white;
+    padding: 5% 0;
+    font-size: 4vw;
+    display: flex;
+    text-decoration: none;
+  }
+}
+@keyframes siteOpenA {
+  from {
+    height: 0vw;
+  }
+  to {
+    height: 30vw;
+  }
+}
+@keyframes siteCloseA {
+  from {
+    height: 30vw;
+  }
+  to {
+    height: 0vw;
+  }
+}
+@keyframes menuOpen {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes menuClose {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+* a, * i, * li, * button {
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, black, rgb(216, 216, 216));
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
