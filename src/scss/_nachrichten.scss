@@ -67,3 +67,40 @@ main{
         }
     }
 }
+// ================= media query ================
+@media only screen and (max-width:$mq){
+    main{
+        .nachrichten{
+            .nachrichten-con{
+                width: 100%;
+                margin: 0;
+                .top{
+                    h1{
+                        font-size: $mo-h1;
+                    }
+                    .nachrichten-link{
+                        font-size: $mo-p;
+                    }
+                }
+                .carts{
+                    flex-wrap: wrap;
+                    span{
+                        width: 80%;
+                        margin: 2% auto;
+                        .text{
+                            p{
+                                font-size: $mo-p;
+                            }
+                            small{
+                                font-size: $mo-p;
+                            }
+                            h3{
+                                font-size: $mo-p;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

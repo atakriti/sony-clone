@@ -34,3 +34,26 @@ main{
         }
     }
 }
+
+// =========================== media query ================
+@media only screen and (max-width:$mq){
+    main{
+        .baner{
+            padding: 35% 0 35% 35%;
+            .text{
+                width: 80%;
+                p{
+                    font-size: $mo-p;
+                }
+                h1{
+                    font-size: $mo-h1;
+                }
+                button{
+                    font-size: $mo-p;
+                    width: 80%;
+                }
+            }
+          
+        }
+    }
+}

@@ -71,3 +71,33 @@ main{
         }
     }
 }
+
+// =============== media query =============
+@media only screen and (max-width:$mq){
+    main{
+        .neuigkeiten{
+            width: 100%;
+          margin: 0;
+          .neuigkeiten-con{
+            h1{
+                font-size: $mo-h1;
+            }
+            .slides{
+                .slides-con{
+                    width: 300%;
+                    span{
+                        .text{
+                            p{
+                                font-size: $mo-p;
+                                i{
+                                    font-size: $mo-p;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+          }
+        }
+    }
+}

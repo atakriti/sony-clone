@@ -57,3 +57,33 @@
     }
  }
 }
+// ================== media query ===========
+@media only screen and (max-width:$mq){
+    .sites{
+        overflow: scroll;
+        .sites-con{
+           
+            width: 100%;
+            .close-btn{
+                button{
+                    font-size: $mo-p;
+                    width: 20%;
+                    padding: 2%;
+                }
+            }
+            h1{
+                font-size: $mo-h1;
+            }
+            .sites-slides{
+                flex-wrap: wrap;
+                span{
+                    width: 50%;
+                    h3{
+                        font-size: $mo-p;
+                        padding: 2%;
+                    }
+                }
+            }
+        }
+    }
+}

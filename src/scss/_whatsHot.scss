@@ -167,3 +167,79 @@ main {
     }
   }
 }
+
+// ================== media query ====================
+@media only screen and (max-width:$mq){
+  main{
+    .whatHot{
+      width: 100%;
+      padding-bottom: 15%;
+      h1{
+        font-size: $mo-h1;
+      }
+      .what-con{
+        flex-wrap: wrap;
+        .left{
+          width: 100%;
+          span{
+            .img{
+              .fa-heart{
+                font-size: $mo-p;
+              }
+            }
+            .text{
+              padding: 3%;
+              p{
+                font-size: $mo-p;
+              }
+              small{
+                font-size: $mo-p;
+              }
+              b{
+                font-size: $mo-p;
+              }
+            }
+            .stars{
+              font-size: $mo-p;
+              h5{
+                font-size: $mo-p;
+              }
+            }
+          }
+        }
+        // ===== right
+        .right{
+          width: 50%;
+          margin-top: 2%;
+          .img{
+            .fa-heart{
+              font-size: $mo-p;
+            }
+            strong{
+              font-size: $mo-p;
+            }
+          }
+          .text{
+            padding: 3%;
+            p{
+              font-size: $mo-p;
+            }
+            small{
+              font-size: $mo-p;
+            }
+            b{
+              font-size: $mo-p;
+            }
+          }
+          .stars{
+            font-size: $mo-p;
+            h5{
+              font-size: $mo-p;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

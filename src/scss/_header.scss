@@ -115,6 +115,44 @@ header {
            background-color: darkgray;
          }
       }
+      .fa-bars-staggered{
+        display: none;
+      }
+    }
+  }
+}
+// ======================= Media query =================
+@media only screen and (max-width:$mq) {
+  header{
+    padding: 3%;
+    nav{
+      width: 100%;
+      .left{
+        .logo{
+          width: 40%;
+        }
+        ul{
+          display: none;
+        }
+      }
+      .right{
+        width: 65%;
+        ul{
+          display: none;
+        }
+        button{
+          font-size: calc($mo-p - 0.5vw);
+          width: 50%;
+          &:nth-child(3){
+            width: 30%;
+          }
+        }
+        .fa-bars-staggered{
+          display: block;
+          color: white;
+          font-size: 6vw;
+        }
+      }
     }
   }
 }

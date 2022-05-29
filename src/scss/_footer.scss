@@ -62,9 +62,10 @@ main {
           width: 24%;
           line-height: 1.6;
           p{
-              color: white;
+              color: rgb(85, 85, 85);
               font-size: $fs-sm;
               margin-bottom: 2%;
+              font-weight: bold;
           }
           li{
               list-style: none;
@@ -75,6 +76,52 @@ main {
 
           }
         }
+        }
+      }
+    }
+  }
+}
+// ============== media query ===============
+@media only screen and (max-width:$mq){
+  main{
+    footer{
+      padding: 2%;
+      .footer-con{
+        width: 100%;
+        .top{
+          flex-wrap: wrap;
+          span{
+            width: 100%;
+            p{
+              font-size: $mo-p;
+            }
+            form{
+              input{
+                font-size: $mo-p;
+                &::placeholder{
+                  background-size: 4vw;
+                }
+              }
+              button{
+                font-size: $mo-p;
+              }
+            }
+            small{
+              font-size: $mo-p;
+            }
+          }
+          ul{
+            width: 50%;
+            margin: 3% 0;
+            p{
+              font-size: $mo-p;
+            }
+            li{
+              a{
+                font-size: $mo-p;
+              }
+            }
+          }
         }
       }
     }
